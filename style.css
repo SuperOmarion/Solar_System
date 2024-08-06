@@ -1,0 +1,93 @@
+body {
+    background: rgb(1,18,75);
+background: radial-gradient(circle, rgba(1,18,75,1) 36%, rgba(3,19,77,1) 36%, rgba(2,16,73,1) 46%, rgba(8,8,57,1) 53%, rgba(1,6,19,1) 66%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.sun{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fbfb4d;
+    box-shadow: 0 0 40px 10px #fff, 0 0 100px 60px #cf79cf, 0 0 140px 90px #000a0a;
+    transition: all 1s ease-out;
+    background-image: url(sun.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.earth{
+    position: absolute;
+    display: flex;
+    font-size: 35px;
+    left: 30%;
+    width: 20%;
+    margin-top: 0px;
+    transform: rotate(0deg);
+    transform-origin: 100%;
+    transition: all 1s ease-out;
+}
+
+.earth .earth-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(earth.png);
+    background-size: contain;
+    box-shadow: 0 0 1px 3px #36a3ec;
+    cursor: pointer;
+}
+
+.moon{
+    position: absolute;
+    font-size: 20px;
+    width: 30%;
+    top: 1px;
+    right: 95%;
+    transform: rotate(0deg);
+    transform-origin: 100%;
+    transition: all 1s ease-out;
+}
+
+.moon-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(moon.png);
+    background-size: contain;
+    cursor: pointer;
+    box-shadow: 0 0 1px 3px #fff, 0 0 3px 6px #af89af, 0 0 6px 9px #055252;
+}
+
+.mars{
+    position: absolute;
+    display: flex;
+    font-size: 35px;
+    left: 20%;
+    width: 30%;
+    margin-top: 0px;
+    transform: rotate(0deg);
+    transform-origin: 100%;
+    transition: all 1s ease-out;
+}
+
+.mars-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(mars.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 0 1px 3px #ec9736;
+}
